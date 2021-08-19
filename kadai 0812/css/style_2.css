@@ -1,0 +1,110 @@
+body{
+  margin: 0;
+  min-height: 100vh;
+  background-color: #5f7fce;
+  display: flex;
+  flex-direction: column;
+}
+
+header{
+  height: 50px;
+  background-color: black;
+}
+
+.logo{
+  text-align: center;
+}
+
+img{
+  height: 50px;
+  margin: 0;
+}
+
+.container{
+  flex:1;
+  display: flex;
+}
+
+nav{
+  appearance: none;
+  line-height: 1.5;
+}
+
+main{
+  flex: 1;
+}
+
+p{
+  color: red;
+}
+
+#btn{
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/souther_visual.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:center;
+  background-color: rgb(250, 250, 250);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn p{
+  font-size: 2rem;
+}
+
+#next{
+  align-self: flex-end;
+  font-size: 2rem;
+  font-weight: bold;
+  
+}
+#next a{
+  color: rgb(189, 189, 53);
+  opacity: 0;
+}
+
+footer{
+  height: 25px;
+  background-color: rgb(39, 39, 39);
+}
+
+@media screen and (max-width:600px) {
+  body{
+    width: 100%;
+  }
+
+  .container{
+    flex-direction: column;
+    height: 1px;
+  }
+
+  nav{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+  }
+
+  ul{
+    display: flex;
+  }
+
+  li{
+    margin: 0 10px;
+  }
+
+  main{
+    order: -1;
+  }
+
+  #btn{
+    flex:1;
+  }
+
+
+
+  
+}
